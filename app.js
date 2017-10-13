@@ -1,8 +1,5 @@
 // routes.legs.value
 
-
-
-
 // would normally come from api
 var mapValue = 2790;
 
@@ -12,7 +9,7 @@ console.log(is17thOpen);
 
 var answer = document.getElementById("answer");
 
-console.log(answerDiv);
+console.log(answer);
 
 if (is17thOpen) {
     answer.textContent = "Yes";
