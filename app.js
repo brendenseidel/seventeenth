@@ -1,19 +1,42 @@
-// routes.legs.value
+function initMap() {
 
-// would normally come from api
+    var directionsService = new google.maps.DirectionsService();
 
-var mapValue = 2790;
+    var east17th = new google.maps.LatLng(40.000702, -82.983762);
 
-var is17thOpen = mapValue < 2000 ? true : false;
+    var west17th = new google.maps.LatLng(40.001323, -82.998538);
 
-console.log(is17thOpen);
+    function calcRoute() {
+        var request = {
+            origin: east17th,
+            destination: west17th,
+            // Note that Javascript allows us to access the constant
+            // using square brackets and a string value as its
+            // "property."
+            travelMode: 'DRIVING'
+        };
+    }
 
-var answer = document.getElementById("answer");
+    directionsService.route(request, function(response, status) {
+        if (status == 'OK') {
+          directionsDisplay.setDirections(response);
+        }
+    });
+    
 
-console.log(answer);
-
-if (is17thOpen) {
-    answer.textContent = "Yes";
-} else {
-    answer.textContent = "No";
+    // var mapValue = 2790;
+    
+    // var is17thOpen = mapValue < 2000 ? true : false;
+    
+    // console.log(is17thOpen);
+    
+    // var answer = document.getElementById("answer");
+    
+    // console.log(answer);
+    
+    // if (is17thOpen) {
+    //     answer.textContent = "Yes";
+    // } else {
+    //     answer.textContent = "No";
+    // } 
 }
