@@ -1,6 +1,7 @@
 // routes.legs.value
 
 // would normally come from api
+
 var mapValue = 2790;
 
 var is17thOpen = mapValue < 2000 ? true : false;
@@ -16,4 +17,3 @@ if (is17thOpen) {
 } else {
     answer.textContent = "No";
 }
-
