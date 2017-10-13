@@ -1,0 +1,30 @@
+{
+  "name": "seventeenth",
+  "version": "1.0.0",
+  "description": "Is seventeenth open? Let's find out.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendenseidel/seventeenth.git"
+  },
+  "keywords": [
+    "traffic",
+    "columbus",
+    "road",
+    "closure",
+    "traffic",
+    "update"
+  ],
+  "author": "Brenden Seidel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brendenseidel/seventeenth/issues"
+  },
+  "homepage": "https://github.com/brendenseidel/seventeenth#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
